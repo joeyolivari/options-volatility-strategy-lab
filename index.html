@@ -75,6 +75,32 @@
             <a href="#" class="fallback-link" data-fallback="tesla-origin">Open in Power BI Service &rarr;</a>
           </div>
         </div>
+        <dl class="data-attribution" data-attribution="tesla-origin">
+          <div class="attribution-item">
+            <dt>Provider</dt>
+            <dd data-field="provider">Pending</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Value type</dt>
+            <dd data-field="valueType">Pending</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Source timestamp</dt>
+            <dd data-field="sourceTimestamp">Not available</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Ingested</dt>
+            <dd data-field="ingestedTimestamp">Not available</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Feed &amp; cadence</dt>
+            <dd data-field="feed">Not yet connected</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Freshness</dt>
+            <dd><span class="status-badge status-pending" data-field="freshness"><span class="status-dot" aria-hidden="true"></span>Insufficient data</span></dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -97,6 +123,32 @@
             <a href="#" class="fallback-link" data-fallback="ai-monitor">Open in Power BI Service &rarr;</a>
           </div>
         </div>
+        <dl class="data-attribution" data-attribution="ai-monitor">
+          <div class="attribution-item">
+            <dt>Provider</dt>
+            <dd data-field="provider">Pending</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Value type</dt>
+            <dd data-field="valueType">Pending</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Source timestamp</dt>
+            <dd data-field="sourceTimestamp">Not available</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Ingested</dt>
+            <dd data-field="ingestedTimestamp">Not available</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Feed &amp; cadence</dt>
+            <dd data-field="feed">Not yet connected</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Freshness</dt>
+            <dd><span class="status-badge status-pending" data-field="freshness"><span class="status-dot" aria-hidden="true"></span>Insufficient data</span></dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -119,6 +171,32 @@
             <a href="#" class="fallback-link" data-fallback="strategy-lab">Open in Power BI Service &rarr;</a>
           </div>
         </div>
+        <dl class="data-attribution" data-attribution="strategy-lab">
+          <div class="attribution-item">
+            <dt>Provider</dt>
+            <dd data-field="provider">Pending</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Value type</dt>
+            <dd data-field="valueType">Pending</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Source timestamp</dt>
+            <dd data-field="sourceTimestamp">Not available</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Ingested</dt>
+            <dd data-field="ingestedTimestamp">Not available</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Feed &amp; cadence</dt>
+            <dd data-field="feed">Not yet connected</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Freshness</dt>
+            <dd><span class="status-badge status-pending" data-field="freshness"><span class="status-dot" aria-hidden="true"></span>Insufficient data</span></dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -141,6 +219,32 @@
             <a href="#" class="fallback-link" data-fallback="compare-explain">Open in Power BI Service &rarr;</a>
           </div>
         </div>
+        <dl class="data-attribution" data-attribution="compare-explain">
+          <div class="attribution-item">
+            <dt>Provider</dt>
+            <dd data-field="provider">Pending</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Value type</dt>
+            <dd data-field="valueType">Pending</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Source timestamp</dt>
+            <dd data-field="sourceTimestamp">Not available</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Ingested</dt>
+            <dd data-field="ingestedTimestamp">Not available</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Feed &amp; cadence</dt>
+            <dd data-field="feed">Not yet connected</dd>
+          </div>
+          <div class="attribution-item">
+            <dt>Freshness</dt>
+            <dd><span class="status-badge status-pending" data-field="freshness"><span class="status-dot" aria-hidden="true"></span>Insufficient data</span></dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -154,6 +258,20 @@
           <dd>Indicative stock and options data from an approved provider; quotes and trades are delayed, and this is labeled, never presented as live.</dd>
           <dt>Calculations</dt>
           <dd>Premiums, break-evens, maximum loss, and payoff are computed with deterministic, tested logic. AI explains the results; it does not perform the arithmetic.</dd>
+          <dt>Value classification</dt>
+          <dd>
+            Every figure on this dashboard is tagged as one of: <strong>Historical</strong>, <strong>Raw</strong>,
+            <strong>Split-adjusted</strong>, <strong>Indicative</strong>, <strong>Delayed</strong>,
+            <strong>Illustrative</strong>, or <strong>Simulated</strong>. The word &ldquo;Live&rdquo; is never used by
+            itself&mdash;delayed and periodically refreshed data is always labeled as such.
+          </dd>
+          <dt>Freshness states</dt>
+          <dd>
+            Each data-backed section reports one of: <strong>Fresh</strong>, <strong>Stale</strong>,
+            <strong>Refresh failed</strong>, or <strong>Insufficient data</strong>. Sections currently show
+            &ldquo;Insufficient data&rdquo; because the underlying data pipeline and datasets
+            (VSD-17, VSD-18) and Power BI reports (VSD-38, VSD-42) have not been built yet.
+          </dd>
         </dl>
       </div>
     </section>

@@ -54,4 +54,26 @@
     iframe.src = src;
     container.appendChild(iframe);
   });
+
+  // Data-attribution values are pending the data pipeline (VSD-17, VSD-18)
+  // and Power BI reports (VSD-38, VSD-42). Once those land, populate each
+  // section's entry here with real provider, timestamp, feed, and
+  // freshness values instead of the "Insufficient data" defaults.
+  var DATA_ATTRIBUTION = {};
+
+  document.querySelectorAll(".data-attribution").forEach(function (dl) {
+    var key = dl.getAttribute("data-attribution");
+    var values = DATA_ATTRIBUTION[key];
+
+    if (!values) {
+      return;
+    }
+
+    Object.keys(values).forEach(function (field) {
+      var target = dl.querySelector('[data-field="' + field + '"]');
+      if (target) {
+        target.textContent = values[field];
+      }
+    });
+  });
 })();

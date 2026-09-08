@@ -402,6 +402,21 @@ h2 {
   background: rgba(251, 113, 133, 0.1);
 }
 
+.status-pending {
+  color: var(--color-text-faint);
+  background: rgba(107, 124, 148, 0.12);
+}
+
+.status-stale {
+  color: var(--color-notice-border);
+  background: var(--color-notice-bg);
+}
+
+.status-fresh {
+  color: var(--color-accent-strong);
+  background: rgba(45, 212, 191, 0.1);
+}
+
 .status-dot {
   width: 7px;
   height: 7px;
@@ -435,6 +450,40 @@ h2 {
 .fallback-link:focus-visible {
   border-color: var(--color-accent);
   background: rgba(94, 234, 212, 0.08);
+}
+
+.data-attribution {
+  margin: var(--space-2) 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-2) var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+}
+
+.attribution-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.attribution-item dt {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--color-text-faint);
+}
+
+.attribution-item dd {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  overflow-wrap: anywhere;
 }
 
 .methodology-list {

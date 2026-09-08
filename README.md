@@ -17,4 +17,10 @@ Power BI reports are built and published separately, then embedded via the
 `EMBED_SOURCES` map in `js/main.js` once report URLs are available
 (VSD-37, VSD-38). Until then, each embed section shows a loading state.
 
+Each embed section also carries a data-attribution block (provider, value
+classification, source/ingestion timestamps, feed/cadence, freshness state)
+populated via the `DATA_ATTRIBUTION` map in `js/main.js`. It reports
+"Insufficient data" until the data pipeline and datasets (VSD-17, VSD-18)
+and Power BI reports (VSD-38, VSD-42) are built.
+
 This site contains no credentials, API keys, or tokens.
