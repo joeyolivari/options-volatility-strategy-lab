@@ -5,17 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volatility Strategy Dashboard</title>
   <meta name="description" content="Educational, hypothetical market-research project pairing the Tesla 2020-2021 volatility case study with an AI-industry volatility monitor and a long straddle/strangle strategy lab." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
     <div class="header-bar">
-      <a class="brand" href="#top">Volatility Strategy Dashboard</a>
+      <a class="brand" href="#top" aria-label="Volatility Strategy Dashboard home"><span class="brand-mark" aria-hidden="true">V<span>↗</span></span><span>VOLATILITY<span class="brand-subtitle">STRATEGY LAB</span></span></a>
       <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
         <span class="nav-toggle-label">Menu</span>
         <span class="nav-toggle-icon" aria-hidden="true"></span>
@@ -30,51 +27,56 @@
         <li><a href="#methodology">Methodology</a></li>
         <li><a href="#project-evidence">Project Evidence</a></li>
       </ul>
-    </nav>
+    </nav><div class="header-context"><span class="status-dot" aria-hidden="true"></span> Research workspace<span class="header-context-note">An educational project by Joey Carbajo</span></div>
   </header>
 
   <main id="main-content">
     <section class="intro" id="top" aria-labelledby="intro-heading">
       <div class="intro-inner">
-        <p class="eyebrow">Educational market-research portfolio project</p>
-        <h1 id="intro-heading">One project, two connected stories in market volatility</h1>
-        <p class="intro-lead">
-          The Volatility Strategy Dashboard pairs the Tesla 2020&ndash;2021 volatility period with a forward-looking
-          screen of publicly traded AI-industry companies, then lets you evaluate long straddle and long strangle
-          scenarios using transparent, evidence-grounded calculations.
-        </p>
+        <div class="workspace-bar"><span>RESEARCH / OVERVIEW</span><span class="workspace-status"><span class="status-dot" aria-hidden="true"></span> Data not connected</span></div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">A study in movement</p>
+            <h1 id="intro-heading">Understand the move.<br><em>Explore the strategy.</em></h1>
+            <p class="intro-lead">From Tesla’s 2020–2021 volatility to the next wave of AI companies. Explore how price movement, option premiums, and timing shape long straddles and strangles.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#tesla-origin">Explore the research <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="#project-evidence">View project evidence <span aria-hidden="true">→</span></a></div>
+            <p class="hero-caption">Historical context. Transparent methods. Evidence before interpretation.</p>
+          </div>
+          <aside class="research-map" aria-label="The research journey">
+            <div class="map-heading"><span>THE RESEARCH PATH</span><span aria-hidden="true">↗</span></div>
+            <a href="#tesla-origin"><span class="map-number">01</span><span><strong>Start with the movement</strong><small>Tesla · 2020–2021 case study</small></span><span aria-hidden="true">↗</span></a>
+            <a href="#ai-monitor"><span class="map-number">02</span><span><strong>Find the conditions</strong><small>AI industry · volatility &amp; liquidity</small></span><span aria-hidden="true">↗</span></a>
+            <a href="#strategy-lab"><span class="map-number">03</span><span><strong>Evaluate the structure</strong><small>Long straddle · long strangle</small></span><span aria-hidden="true">↗</span></a>
+            <a href="#compare-explain"><span class="map-number">04</span><span><strong>Understand the trade-offs</strong><small>Compare · learn · explain</small></span><span aria-hidden="true">↗</span></a>
+            <p>One connected research experience</p>
+          </aside>
+        </div>
         <ul class="intro-stats">
-          <li><span class="intro-stat-value">2020&ndash;2021</span><span class="intro-stat-label">Tesla volatility case study</span></li>
-          <li><span class="intro-stat-value">12</span><span class="intro-stat-label">AI-industry seed universe</span></li>
-          <li><span class="intro-stat-value">2</span><span class="intro-stat-label">Strategies: straddle &amp; strangle</span></li>
+          <li><span class="intro-stat-label">HISTORICAL LENS</span><span class="intro-stat-value">2020–21</span><span class="stat-note">Tesla volatility case study</span></li>
+          <li><span class="intro-stat-label">MONITORING UNIVERSE</span><span class="intro-stat-value">12 <small>companies</small></span><span class="stat-note">Approved AI-industry seed pool</span></li>
+          <li><span class="intro-stat-label">RESEARCH SCREEN</span><span class="intro-stat-value">Top 8</span><span class="stat-note">Dynamic ranking once data is available</span></li>
+          <li><span class="intro-stat-label">STRATEGY FOCUS</span><span class="intro-stat-value">02 <small>structures</small></span><span class="stat-note">Long straddle &amp; long strangle</span></li>
         </ul>
-        <p class="notice" role="note">
-          <strong>Educational and hypothetical only.</strong> This project does not provide personalized investment,
-          tax, or legal advice and does not recommend buying or selling any security or options contract. Surfaced
-          scenarios are research candidates, not trade instructions.
-        </p>
+        <p class="notice" role="note"><span class="notice-icon" aria-hidden="true">i</span><span><strong>Built for research and learning.</strong> Educational and hypothetical only. Surfaced scenarios are research candidates, not trade instructions. Options can lose the full premium paid.</span></p>
       </div>
     </section>
-
     <section class="embed-section" id="tesla-origin" aria-labelledby="tesla-origin-heading">
       <div class="section-inner">
         <p class="section-eyebrow">01 &middot; Historical case study</p>
-        <h2 id="tesla-origin-heading">Tesla Volatility Origin Story</h2>
-        <p class="section-description">
-          Tesla&rsquo;s 2020&ndash;2021 price history and realized volatility, with raw and split-adjusted views
-          clearly labeled, plus a representative hypothetical straddle/strangle example.
-        </p>
-        <div class="embed-container" data-embed="tesla-origin">
+        <div class="section-title-row"><h2 id="tesla-origin-heading">The movement that started it.</h2><span class="section-tag">Historical context</span></div>
+        <p class="section-description">Study Tesla’s 2020–2021 price movement and realized volatility, with clearly labeled raw and split-adjusted context and representative hypothetical strategies.</p>
+        <div class="report-toolbar"><span><span class="report-indicator" aria-hidden="true"></span> POWER BI / HISTORICAL CONTEXT</span><span class="report-availability">Awaiting publication</span></div><div class="embed-container" data-embed="tesla-origin">
           <div class="embed-placeholder">
-            <span class="status-badge status-loading"><span class="status-dot" aria-hidden="true"></span>Loading report&hellip;</span>
-            <p class="embed-placeholder-text">Power BI: Tesla Volatility Origin Story</p>
+            <div class="report-symbol" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div><span class="report-label">2020–2021 · TSLA</span><h3 class="embed-placeholder-text">The case study is being prepared.</h3><p>The published report will bring together price history, market events, and a representative strategy example.</p><span class="status-badge status-pending"><span class="status-dot" aria-hidden="true"></span>Report not connected</span></div>
           </div>
           <div class="embed-fallback" hidden>
             <span class="status-badge status-error"><span class="status-dot" aria-hidden="true"></span>Report unavailable</span>
             <p class="embed-fallback-text">This embedded report could not load.</p>
-            <a href="#" class="fallback-link" data-fallback="tesla-origin">Open in Power BI Service &rarr;</a>
+            <a class="fallback-link" data-fallback="tesla-origin" hidden>Open in Power BI Service &rarr;</a>
           </div>
         </div>
+        <p class="section-note">Joey’s experience with long straddles and strangles during this period inspired the project. This case study does not reproduce private trades, brokerage records, or exact personal profit.</p>
         <dl class="data-attribution" data-attribution="tesla-origin">
           <div class="attribution-item">
             <dt>Provider</dt>
@@ -107,22 +109,20 @@
     <section class="embed-section" id="ai-monitor" aria-labelledby="ai-monitor-heading">
       <div class="section-inner">
         <p class="section-eyebrow">02 &middot; Forward-looking screen</p>
-        <h2 id="ai-monitor-heading">AI Industry Volatility Monitor</h2>
-        <p class="section-description">
-          A defined universe of publicly traded AI-industry companies with listed options, screened for volatility
-          and liquidity, with source timestamp, ingestion timestamp, feed-delay, and data-quality status shown.
-        </p>
-        <div class="embed-container" data-embed="ai-monitor">
+        <div class="section-title-row"><h2 id="ai-monitor-heading">Follow the conditions. Then investigate.</h2><span class="section-tag">AI industry screen</span></div>
+        <p class="section-description">Explore the approved AI-industry universe. The monitor will rank price instability, then apply current options, liquidity, and data-quality gates.</p>
+        <div class="universe-strip" aria-label="Approved seed universe, unranked"><span>NVDA</span><span>AMD</span><span>ARM</span><span>AVGO</span><span>MRVL</span><span>MU</span><span>SMCI</span><span>PLTR</span><span>AI</span><span>SNOW</span><span>SOUN</span><span>TSLA</span><span class="universe-label">UNRANKED SEED POOL</span></div><div class="report-toolbar"><span><span class="report-indicator" aria-hidden="true"></span> POWER BI / AI INDUSTRY SCREEN</span><span class="report-availability">Awaiting publication</span></div><div class="embed-container" data-embed="ai-monitor">
           <div class="embed-placeholder">
-            <span class="status-badge status-loading"><span class="status-dot" aria-hidden="true"></span>Loading report&hellip;</span>
-            <p class="embed-placeholder-text">Power BI: AI Industry Volatility Monitor</p>
+            <div class="report-symbol" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div><span class="report-label">12-symbol seed universe</span><h3 class="embed-placeholder-text">The monitor is awaiting market data.</h3><p>The Top 8 will appear only after current data passes the documented screening and eligibility rules.</p><span class="status-badge status-pending"><span class="status-dot" aria-hidden="true"></span>Report not connected</span></div>
           </div>
           <div class="embed-fallback" hidden>
             <span class="status-badge status-error"><span class="status-dot" aria-hidden="true"></span>Report unavailable</span>
             <p class="embed-fallback-text">This embedded report could not load.</p>
-            <a href="#" class="fallback-link" data-fallback="ai-monitor">Open in Power BI Service &rarr;</a>
+            <a class="fallback-link" data-fallback="ai-monitor" hidden>Open in Power BI Service &rarr;</a>
           </div>
         </div>
+        <p class="section-note">The seed universe is a research scope, not a list of current candidates. A high volatility score alone does not imply a profitable strategy.</p>
         <dl class="data-attribution" data-attribution="ai-monitor">
           <div class="attribution-item">
             <dt>Provider</dt>
@@ -155,22 +155,20 @@
     <section class="embed-section" id="strategy-lab" aria-labelledby="strategy-lab-heading">
       <div class="section-inner">
         <p class="section-eyebrow">03 &middot; Scenario evaluation</p>
-        <h2 id="strategy-lab-heading">Strategy Lab</h2>
-        <p class="section-description">
-          Select a surfaced company, choose a long straddle or long strangle, and review total premium, break-even
-          points, maximum loss, and the combined payoff at expiration.
-        </p>
-        <div class="embed-container" data-embed="strategy-lab">
+        <div class="section-title-row"><h2 id="strategy-lab-heading">Give the movement a structure.</h2><span class="section-tag">Scenario evaluation</span></div>
+        <p class="section-description">Evaluate a long straddle or long strangle through its combined premium, break-even prices, maximum loss, and payoff at expiration.</p>
+        <div class="report-toolbar"><span><span class="report-indicator" aria-hidden="true"></span> POWER BI / SCENARIO EVALUATION</span><span class="report-availability">Awaiting publication</span></div><div class="embed-container" data-embed="strategy-lab">
           <div class="embed-placeholder">
-            <span class="status-badge status-loading"><span class="status-dot" aria-hidden="true"></span>Loading report&hellip;</span>
-            <p class="embed-placeholder-text">Power BI: Strategy Lab</p>
+            <div class="report-symbol" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div><span class="report-label">Long straddle / Long strangle</span><h3 class="embed-placeholder-text">The Strategy Lab is not connected yet.</h3><p>The published Power BI report will provide company selection, strategy inputs, and deterministic payoff analysis.</p><span class="status-badge status-pending"><span class="status-dot" aria-hidden="true"></span>Report not connected</span></div>
           </div>
           <div class="embed-fallback" hidden>
             <span class="status-badge status-error"><span class="status-dot" aria-hidden="true"></span>Report unavailable</span>
             <p class="embed-fallback-text">This embedded report could not load.</p>
-            <a href="#" class="fallback-link" data-fallback="strategy-lab">Open in Power BI Service &rarr;</a>
+            <a class="fallback-link" data-fallback="strategy-lab" hidden>Open in Power BI Service &rarr;</a>
           </div>
         </div>
+        <p class="section-note">Expiration payoff and pre-expiration option valuation are different. Premiums, time decay, implied volatility, and liquidity all matter.</p>
         <dl class="data-attribution" data-attribution="strategy-lab">
           <div class="attribution-item">
             <dt>Provider</dt>
@@ -203,22 +201,20 @@
     <section class="embed-section" id="compare-explain" aria-labelledby="compare-explain-heading">
       <div class="section-inner">
         <p class="section-eyebrow">04 &middot; Comparison and explanation</p>
-        <h2 id="compare-explain-heading">Compare, Learn and AI Explain</h2>
-        <p class="section-description">
-          Straddle-versus-strangle comparison, scenario presets, and an AI-generated explanation grounded in the
-          calculated metrics &mdash; including risks, invalidating conditions, and insufficient-data behavior.
-        </p>
-        <div class="embed-container" data-embed="compare-explain">
+        <div class="section-title-row"><h2 id="compare-explain-heading">Make the trade-offs visible.</h2><span class="section-tag">Compare & explain</span></div>
+        <p class="section-description">Compare both structures under shared assumptions, then explore the evidence, risks, and conditions that could invalidate a research scenario.</p>
+        <div class="report-toolbar"><span><span class="report-indicator" aria-hidden="true"></span> POWER BI / COMPARE & EXPLAIN</span><span class="report-availability">Awaiting publication</span></div><div class="embed-container" data-embed="compare-explain">
           <div class="embed-placeholder">
-            <span class="status-badge status-loading"><span class="status-dot" aria-hidden="true"></span>Loading report&hellip;</span>
-            <p class="embed-placeholder-text">Power BI: Compare, Learn and AI Explain</p>
+            <div class="report-symbol" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div><span class="report-label">Evidence-based interpretation</span><h3 class="embed-placeholder-text">Comparisons and explanations are being prepared.</h3><p>AI explanations will use calculated evidence and identify missing data. No research result is available yet.</p><span class="status-badge status-pending"><span class="status-dot" aria-hidden="true"></span>Report not connected</span></div>
           </div>
           <div class="embed-fallback" hidden>
             <span class="status-badge status-error"><span class="status-dot" aria-hidden="true"></span>Report unavailable</span>
             <p class="embed-fallback-text">This embedded report could not load.</p>
-            <a href="#" class="fallback-link" data-fallback="compare-explain">Open in Power BI Service &rarr;</a>
+            <a class="fallback-link" data-fallback="compare-explain" hidden>Open in Power BI Service &rarr;</a>
           </div>
         </div>
+        <p class="section-note">AI interprets the calculated metrics; it does not replace the arithmetic or invent missing evidence.</p>
         <dl class="data-attribution" data-attribution="compare-explain">
           <div class="attribution-item">
             <dt>Provider</dt>
@@ -250,17 +246,17 @@
 
     <section class="methodology" id="methodology" aria-labelledby="methodology-heading">
       <div class="section-inner">
-        <h2 id="methodology-heading">Methodology and data sources</h2>
+        <p class="section-eyebrow">THE RESEARCH FOUNDATION</p><h2 id="methodology-heading">Transparent by design.</h2><p class="section-description">Understand where the data comes from, how results are calculated, and what the evidence can support.</p>
         <dl class="methodology-list">
           <dt>Historical data</dt>
           <dd>Tesla 2020&ndash;2021 daily price and volume history, with a labeled split-adjustment indicator.</dd>
           <dt>Delayed/near-live data</dt>
-          <dd>Indicative stock and options data from an approved provider; quotes and trades are delayed, and this is labeled, never presented as live.</dd>
+          <dd>Planned indicative or delayed stock and options feeds. Public display requires provider-terms review; the source, feed delay, and achieved refresh cadence must be labeled.</dd>
           <dt>Calculations</dt>
           <dd>Premiums, break-evens, maximum loss, and payoff are computed with deterministic, tested logic. AI explains the results; it does not perform the arithmetic.</dd>
           <dt>Value classification</dt>
           <dd>
-            Every figure on this dashboard is tagged as one of: <strong>Historical</strong>, <strong>Raw</strong>,
+            Published figures must carry the applicable classifications: <strong>Historical</strong>, <strong>Raw</strong>,
             <strong>Split-adjusted</strong>, <strong>Indicative</strong>, <strong>Delayed</strong>,
             <strong>Illustrative</strong>, or <strong>Simulated</strong>. The word &ldquo;Live&rdquo; is never used by
             itself&mdash;delayed and periodically refreshed data is always labeled as such.
@@ -268,9 +264,7 @@
           <dt>Freshness states</dt>
           <dd>
             Each data-backed section reports one of: <strong>Fresh</strong>, <strong>Stale</strong>,
-            <strong>Refresh failed</strong>, or <strong>Insufficient data</strong>. Sections currently show
-            &ldquo;Insufficient data&rdquo; because the underlying data pipeline and datasets
-            (VSD-17, VSD-18) and Power BI reports (VSD-38, VSD-42) have not been built yet.
+            <strong>Refresh failed</strong>, or <strong>Insufficient data</strong>. Sections currently show “Insufficient data” while datasets and published reports are being prepared.
           </dd>
         </dl>
       </div>
@@ -279,7 +273,7 @@
     <section class="project-evidence" id="project-evidence" aria-labelledby="project-evidence-heading">
       <div class="section-inner">
         <p class="section-eyebrow">05 &middot; Recruiter and reviewer trail</p>
-        <h2 id="project-evidence-heading">Project evidence</h2>
+        <h2 id="project-evidence-heading">Behind the research.</h2><p class="section-description">Follow the work from requirements to delivery. Confluence and Jira links may require access.</p>
         <ul class="evidence-grid">
           <li class="evidence-card">
             <a href="https://joeyolivari.atlassian.net/wiki/spaces/VSD/pages/327702/Business+Requirements+Document+Volatility+Strategy+Dashboard">
@@ -296,7 +290,7 @@
           <li class="evidence-card">
             <a href="https://github.com/joeyolivari/options-volatility-strategy-lab">
               <span class="evidence-card-title">GitHub repository</span>
-              <span class="evidence-card-desc">Source code, tests, and commit history</span>
+              <span class="evidence-card-desc">Website source and commit history</span>
             </a>
           </li>
           <li class="evidence-card">
@@ -312,7 +306,7 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p class="disclaimer">
+      <div class="footer-brand">VOLATILITY <span>STRATEGY LAB</span><a href="#top">Back to top ↑</a></div><p class="disclaimer">
         This dashboard is an educational, hypothetical, and market-research project. It does not provide
         personalized investment, tax, or legal advice and does not recommend buying or selling any security or
         options contract. Surfaced scenarios are research candidates, not trade instructions. Options involve risk,
@@ -321,7 +315,7 @@
       </p>
       <p class="footer-meta">
         Data sources and methodology: see <a href="#methodology">Methodology and data sources</a>.
-        <span class="last-updated" data-last-updated>Last updated: unavailable</span>
+        <span class="last-updated" data-last-updated>Site updated: <time datetime="2026-09-13">September 13, 2026</time> · Market data: not connected</span>
       </p>
     </div>
   </footer>
